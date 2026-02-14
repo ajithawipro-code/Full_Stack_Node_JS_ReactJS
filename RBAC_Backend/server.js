@@ -9,14 +9,14 @@ const app=express();
 app.use(express.json());
 dotenv.config();
 
-
 app.use(cors({
-    origin : "http://localhost:5173",
-    methods: ["GET","POST","PUT","DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
+  origin: [
+    "http://localhost:5173",
+    "https://full-stack-node-js-reactjs.vercel.app"
+  ],
+  credentials: true
+}));
 
-})
-);
 
 app.options(/.*/, cors());
 
