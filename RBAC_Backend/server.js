@@ -12,7 +12,7 @@ dotenv.config();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://full-stack-node-js-react-js.vercel.app/"
+    "https://full-stack-node-js-react-js.vercel.app"
   ],
   credentials: true
 }));
