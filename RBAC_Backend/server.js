@@ -25,7 +25,7 @@ app.use("/product", ProductRoute);
 
 
 
-const PORT=process.env.PORT;
+const PORT = process.env.PORT || 4567;
 
 app.listen(PORT,async()=>{
 
