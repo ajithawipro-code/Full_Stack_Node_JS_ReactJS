@@ -21,7 +21,7 @@ export const Signup=()=>{
         e.preventDefault();
         try {
 
-            const res= await axios.post("http://localhost:4567/user/signup", inputData);
+            const res= await axios.post("https://full-stack-node-js-reactjs.onrender.com/user/signup", inputData);
 
             console.log("res from BE is",res.data);
 

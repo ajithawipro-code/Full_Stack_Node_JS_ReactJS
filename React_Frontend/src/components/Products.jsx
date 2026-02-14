@@ -45,7 +45,7 @@ export const Products = () =>{
         if(editProduct)
         {
 
-            const response = await axios.put(`http://localhost:4567/product/update/${editProduct.id}`, formData,
+            const response = await axios.put(`https://full-stack-node-js-reactjs.onrender.com/product/update/${editProduct.id}`, formData,
                 {
                     headers : {
                         Authorization : `Bearer ${token}`
@@ -62,7 +62,7 @@ export const Products = () =>{
         }
             
       else{
-            const response = await axios.post("http://localhost:4567/product/addProduct", formData,
+            const response = await axios.post("https://full-stack-node-js-reactjs.onrender.com/product/addProduct", formData,
                 {
                     headers: {
                         Authorization : `Bearer ${token}`
@@ -109,7 +109,7 @@ export const Products = () =>{
 
             const token = localStorage.getItem("token");
 
-            const response = await axios.delete(`http://localhost:4567/product/delete/${product.id}`,
+            const response = await axios.delete(`https://full-stack-node-js-reactjs.onrender.com/product/delete/${product.id}`,
                 {
                     headers : {
                         Authorization : `Bearer ${token}`
@@ -138,7 +138,7 @@ export const Products = () =>{
 
             const token=localStorage.getItem("token");
 
-            const fetch_response = await axios.get("http://localhost:4567/product/getProducts", 
+            const fetch_response = await axios.get("https://full-stack-node-js-reactjs.onrender.com/product/getProducts", 
                 {
                     headers: {
                         Authorization : `Bearer ${token}`
